@@ -1,0 +1,196 @@
+# Airtel Network Performance & Customer Experience Analytics
+
+A complete SQL + Power BI data analytics project that analyzes telecom network performance, customer experience, complaints, and usage patterns using a synthetic Airtel dataset.
+
+## Project Title
+
+**Airtel Network Performance & Customer Experience Analytics**
+
+## Project Overview
+
+This project focuses on analyzing telecom network quality and customer experience using SQL for data analysis and Power BI for interactive dashboarding. The solution helps identify poor-performing locations, network issues, complaint trends, customer satisfaction, and 4G vs 5G performance through KPI-driven dashboards.
+
+## Project Objectives
+
+- Analyze overall network performance
+- Compare 4G and 5G network KPIs
+- Identify states and cities with poor network quality
+- Analyze customer complaints and complaint categories
+- Measure customer satisfaction and Net Promoter Score (NPS)
+- Evaluate complaint resolution performance
+- Understand customer data and voice usage patterns
+- Build interactive Power BI dashboards for business decision-making
+
+## Tools & Technologies
+
+| Tool | Purpose |
+|------|---------|
+| MySQL | Data analysis using SQL |
+| Power BI | Dashboard & Data Visualization |
+| DAX | KPI & Measure calculations |
+| Excel/CSV | Source dataset |
+| Git & GitHub | Version control & Portfolio |
+
+## Dataset Description
+
+The project contains **50,000 records** across five primary tables.
+
+| Table | Rows | Description |
+|------|------:|------------|
+| Customer_Data | 10,000 | Customer master information |
+| Network_Performance | 10,000 | Network availability, speed & latency |
+| Customer_Experience | 10,000 | Complaints, satisfaction & NPS |
+| Location_Analysis | 10,000 | State & city performance |
+| Usage_Analysis | 10,000 | Data & voice usage |
+| Date_Table | Calendar | Date dimension for reporting |
+
+**Key Fields:** Customer_ID, State, City, Network_Type, Customer_Segment, Network Availability, Download Speed, Upload Speed, Latency, Call Drop Rate, Complaints, Satisfaction, NPS, Data Usage, Voice Usage.
+
+## SQL Analysis
+
+Example SQL queries used in the project:
+
+```sql
+-- Total Customers
+SELECT COUNT(DISTINCT Customer_ID) AS Total_Customers
+FROM Customer_Data;
+
+-- Total Complaints
+SELECT COUNT(*) AS Total_Complaints
+FROM Customer_Experience
+WHERE Complaint_Flag = 1;
+
+-- 4G vs 5G Performance
+SELECT Network_Type,
+       AVG(Download_Speed_Mbps) AS Avg_Download_Speed,
+       AVG(Latency_ms) AS Avg_Latency,
+       AVG(Call_Drop_Rate_Pct) AS Avg_Call_Drop
+FROM Network_Performance
+GROUP BY Network_Type;
+```
+
+## Power BI Dashboard
+
+The report contains **4 interactive dashboard pages**:
+
+1. Executive Summary
+2. Network Performance
+3. Customer Experience
+4. Usage Analysis & Location Analysis
+
+Each page includes slicers for **State, City, Network Type, Customer Segment, and Date**.
+
+## Key KPIs
+
+| KPI |
+|------|
+| Total Customers |
+| Total Complaints |
+| Avg Network Availability |
+| Avg Download Speed |
+| Avg Upload Speed |
+| Avg Latency |
+| Avg Call Drop Rate |
+| Customer Satisfaction |
+| Avg NPS |
+| Complaint Resolution Rate |
+| Total Data Usage |
+| Average Voice Usage |
+| Average Tenure |
+
+## Key Insights
+
+- Compare 4G and 5G network performance.
+- Identify low network availability regions.
+- Detect cities with high call-drop rates.
+- Monitor monthly complaint trends.
+- Analyze customer satisfaction by segment.
+- Track complaint resolution efficiency.
+- Understand state-wise data usage patterns.
+- Support data-driven telecom business decisions.
+
+## Project Workflow
+
+```text
+Dataset Collection
+        │
+        ▼
+Data Cleaning & Validation
+        │
+        ▼
+Load Data into MySQL
+        │
+        ▼
+SQL Analysis
+        │
+        ▼
+Power BI Data Modeling
+        │
+        ▼
+DAX Measure Creation
+        │
+        ▼
+Interactive Dashboard Development
+        │
+        ▼
+Business Insights & Recommendations
+```
+
+## Repository Structure
+
+```text
+Airtel-Network-Analytics/
+│
+├── Dataset/
+│   ├── Customer_Data.csv
+│   ├── Network_Performance.csv
+│   ├── Customer_Experience.csv
+│   ├── Location_Analysis.csv
+│   └── Usage_Analysis.csv
+│
+├── SQL/
+│   └── Airtel_SQL_Queries.sql
+│
+├── PowerBI/
+│   └── Airtel_Network_Analytics.pbix
+│
+├── Screenshots/
+│   ├── Executive_Summary.png
+│   ├── Network_Performance.png
+│   ├── Customer_Experience.png
+│   └── Usage_Location.png
+│
+└── README.md
+```
+
+## Dashboard Screenshots
+
+> Add your exported Power BI screenshots inside the `Screenshots` folder.
+
+| Dashboard | Image |
+|-----------|-------|
+| Executive Summary | `Screenshots/Executive_Summary.png` |
+| Network Performance | `Screenshots/Network_Performance.png` |
+| Customer Experience | `Screenshots/Customer_Experience.png` |
+| Usage & Location Analysis | `Screenshots/Usage_Location.png` |
+
+## How to Run the Project
+
+1. Clone this repository.
+2. Import the CSV files into MySQL.
+3. Execute the SQL queries from the `SQL` folder.
+4. Open `Airtel_Network_Analytics.pbix` in Power BI Desktop.
+5. Refresh the data model.
+6. Explore the interactive dashboards using slicers.
+
+## Author
+
+**Pandieswaran**
+
+**Role:** Data Analytics Portfolio Project
+
+**Skills:** SQL • Power BI • DAX • Data Visualization • Business Analytics
+
+---
+
+⭐ If you found this project useful, consider giving it a **Star** on GitHub.
