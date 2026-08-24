@@ -310,19 +310,21 @@ Airtel-Network-Performance-Analytics/
 
 ### Executive Summary
 
-![Executive Summary](screenshots/executive_summary.png)
+<img width="885" height="498" alt="1 Executive Summary" src="https://github.com/user-attachments/assets/2da23879-f6db-4d09-9285-5ea677e20abe" />
 
 ### Network Performance
 
-![Network Performance](screenshots/network_performance.png)
+<img width="881" height="497" alt="2 Network Performance" src="https://github.com/user-attachments/assets/742676c1-2c24-4f91-93cc-56ff1f1b3150" />
 
 ### Customer Experience
 
-![Customer Experience](screenshots/customer_experience.png)
+<img width="886" height="497" alt="3 Customer Experience" src="https://github.com/user-attachments/assets/744d280f-f6ac-450e-b9dd-215943faa7b3" />
+
 
 ### Usage & Location Analysis
 
-![Usage & Location Analysis](screenshots/usage_location_analysis.png)
+<img width="886" height="491" alt="4 Usage Analysis  Location Analysis" src="https://github.com/user-attachments/assets/0d6c8a72-888b-441d-a03c-cead41642ee1" />
+
 
 > Place your actual Power BI screenshots inside the `screenshots/` folder using the filenames shown above.
 
@@ -376,15 +378,10 @@ Use the State, City, Network Type, Customer Segment, and Date slicers to interac
 
 ## Author
 
-**Vaishnavi M**
-
-B.E. Computer Science and Engineering
-
-**Project:** Airtel Network Performance & Customer Experience Analytics
-
-**Skills Demonstrated:**  
-`SQL` • `MySQL` • `Power BI` • `DAX` • `Data Analytics` • `Data Visualization`
-
+**M Pandieswaran**
+**Project:** Airtel Network Performance & Customer Experience Analytic
+**Industry**:Telecommunication Industry
+**Technologies**: MySQL, Power BI, Power Query, DAX
 ---
 
 ## Project Highlights
