@@ -379,9 +379,13 @@ Use the State, City, Network Type, Customer Segment, and Date slicers to interac
 ## Author
 
 **M Pandieswaran**
-**Project:** Airtel Network Performance & Customer Experience Analytic
+
+**Project**: Airtel Network Performance & Customer Experience Analytic
+
 **Industry**:Telecommunication Industry
+
 **Technologies**: MySQL, Power BI, Power Query, DAX
+
 ---
 
 ## Project Highlights
